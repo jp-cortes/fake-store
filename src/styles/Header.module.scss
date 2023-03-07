@@ -1,0 +1,84 @@
+@use './vars';
+
+/*navbar*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid $--very-light-pink;
+    position: sticky;
+    top: 0;
+    background: $--primary-color;
+}
+.navbar_menu{
+    display: none;
+}
+
+.logo_navbar{
+    width: 100px; 
+}
+.navbar_left ul,
+.navbar_right ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    height: 16px;  
+}
+.navbar_left {
+    display: flex;
+}
+.navbar_left ul {
+    margin-left: 12px;
+}
+
+.navbar_left ul li a,
+.navbar_right ul li a {
+    text-decoration: none;
+    color: $--very-light-pink;
+    border: 1p solid $--primary-color;
+    padding: 8px;
+    border-radius: 8px;
+}
+.navbar_left ul li a:hover,
+.navbar_right ul li a:hover {
+    color: $--hospital-green;
+    border: 1px solid $--hospital-green;
+}
+.navbar_email {
+    color: $--very-light-pink;
+    font-size: $--sm;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.navbar_shopping-cart {
+    position: relative;
+}
+.navbar_shopping-cart div{
+    width: 16px;
+    height: 16px;
+    background-color:$--hospital-green;
+    border-radius: 50%;
+    font-size: $--sm;
+    font-weight: bold;
+    position: absolute;
+    top: -6px;
+    right: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $--primary-color;
+}
+/*responsive design navbar*/
+@media (max-width: 640px) {
+    .navbar_menu {
+        display: block;
+    }
+    .navbar_left ul {
+        display: none;
+    }
+    .navbar_email {
+        display: none;
+    }
+}

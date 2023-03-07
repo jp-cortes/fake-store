@@ -1,0 +1,43 @@
+@use './vars';
+
+/*mobile_menu*/
+.mobile_menu {
+  padding:24px;
+}
+.mobile_menu a {
+  text-decoration: none;
+  color: $--black;
+  font-weight: bold;
+}
+.mobile_menu ul {
+  padding: 0;
+  margin: 24px 0 0;
+  list-style: none;
+}
+.mobile_menu ul:nth-child(1) {
+  border-bottom: 1px solid $--very-light-pink;
+}
+.mobile_menu ul:nth-child(3) {
+  border-bottom: 1px solid $--very-light-pink;
+}
+.mobile_menu ul li {
+  margin:24px;
+}
+.bottom_menu{
+  position: relative;
+  top: 80px; 
+}
+.email_mobile_menu {
+  font-size: $--sm;
+  font-weight: 300!important;
+
+}
+.sign_out {
+  font-size: $--sm;
+  color: $--hospital-green !important;
+}
+/*responsive*/
+@media (max-width: 640px) {
+ 
+  
+}

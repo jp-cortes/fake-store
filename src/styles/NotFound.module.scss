@@ -1,0 +1,26 @@
+.container_error{
+    width: 100vw;
+}
+.error_image_container{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    align-content: center;
+    height: 100%;
+
+}
+.error_image{
+    width: 100%;
+    margin: 0 auto;
+}
+@media (max-width: 450px) {
+    .error_image{
+        margin-top: 200px;
+        margin-right: 0;
+    }
+    .error_image_container{
+        width: 90%;
+        margin: 0 auto;
+
+    }
+}

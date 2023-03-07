@@ -1,0 +1,74 @@
+@use './vars';
+
+
+.edit_account{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.form_edit_account{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width:300px;
+}
+
+.title_edit_account{
+  font-size: $--lg;
+  margin-bottom: 30px;
+  text-align: start;
+}
+
+.form_edit_name,
+.form_edit_email,
+.form_edit_password {
+  display: flex;
+  flex-direction: column;
+}
+
+.label_edit_name,
+.label_edit_email,
+.label_edit_password {
+  font-size: $--sm;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.value {
+  color: $--very-light-pink;
+  font-size: $--md;
+  margin:8px 0 32px 0;
+}
+
+.edit_accountButton{
+  background-color: $--primary-color;
+  border-radius: 8px;
+  border: 1px solid $--hospital-green;
+  color: $--hospital-green;
+  width: 100%;
+  cursor: pointer;
+  font-size: $--md;
+  font-weight: bold;
+  height: 50px;
+}
+.edit_button{
+  margin-top: 14px;
+  margin-bottom: 30px;
+}
+
+/*responsive design page 5*/
+@media (max-width: 640px) {
+  .edit_accountButton {
+      position: relative;
+      top: -12px;
+      width: inherit;
+      
+  }
+  .form_edit_account {
+      height:100%;
+      
+  }
+  .responsive_page5 {
+      height: 100%;
+      justify-content: space-between;
+  }
+}
