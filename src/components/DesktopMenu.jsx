@@ -1,12 +1,12 @@
 import React from "react";
-import '@styles/DesktopMenu.module.scss';
+import styles from '@styles/DesktopMenu.module.scss';
 
 const DesktopMenu =  () => {
     return (
-      <div className="desktop_menu">
+      <div className={styles['desktop_menu']}>
         <ul>
           <li>
-            <a href="/*" className="title_menu_desktop">
+            <a href="/*" className={styles['title_menu_desktop']}>
               My orders
             </a>
           </li>

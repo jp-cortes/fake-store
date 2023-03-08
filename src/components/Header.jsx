@@ -1,9 +1,10 @@
 import React, { useContext, useState } from "react";
-import '@styles/Header.module.scss';
-import MenuIconSVG from '@icons/icon_menu.svg';
-import Logo from '@logos/logo_yard_sale.svg';
+import Image from "next/image";
+import styles from'@styles/Header.module.scss';
+import MenuIconSVG from '@assets/Icons/icon_menu.svg';
+import Logo from '@assets/Logos/logo_yard_sale.svg';
 import ShoppingCart from "@containers/ShoppingCart";
-import ShoppingCartIcon from '@icons/icon_shopping_cart.svg'
+import ShoppingCartIcon from '@assets/Icons/icon_shopping_cart.svg'
 import AppContext from "@context/AppContext.js";
 import DesktopMenu from "./DesktopMenu";
 
@@ -11,7 +12,7 @@ import DesktopMenu from "./DesktopMenu";
 const Header = () => {
   const [toggle, setToggle] = useState(false);
   const [toggleOrders, setToggleOrders] = useState(false);
-  //incase  the hook cart is grows 
+  //in case  the hook cart is grows 
   const { state: {cart} } = useContext(AppContext);
   // console.log(state, 'state')
 
@@ -20,18 +21,18 @@ const Header = () => {
   }
     return (
       <>
-        <nav> 
-          <img
+        <nav className={styles.nav}> 
+          <Image
             src={MenuIconSVG}
             alt="menu"
-            className="navbar_menu"
+            className={styles['navbar_menu']}
           />
 
-          <div className="navbar_left">
-            <img
+          <div className={styles['navbar_left']}>
+            <Image
               src={Logo}
               alt="logo"
-              className="logo_navbar"
+              className={styles['logo_navbar']}
             />
 
             <ul>
@@ -61,14 +62,14 @@ const Header = () => {
             </ul>
           </div>
 
-          <div className="navbar_right">
+          <div className={styles['navbar_right']}>
             <ul>
-              <li className="navbar_email" onClick={toggleMenu}>
+              <li className={styles['navbar_email']} onClick={toggleMenu}>
                 email@example.com
               </li>
-              <li className="navbar_shopping_cart"
+              <li className={styles['navbar_shopping_cart']}
                 onClick={() => setToggleOrders(prevState => !prevState)}>
-                <img
+                <Image
                   src={ShoppingCartIcon}
                   alt="shopping_cart_icon"
                 />
