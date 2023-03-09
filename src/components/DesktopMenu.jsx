@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import styles from '@styles/DesktopMenu.module.scss';
 
 const DesktopMenu =  () => {
@@ -12,11 +13,11 @@ const DesktopMenu =  () => {
           </li>
 
           <li>
-            <a href="/">My account</a>
+            <Link href="/login">My account</Link>
           </li>
 
           <li>
-            <a href="/">Sign out</a>
+            <Link href="/">Sign out</Link>
           </li>
         </ul>
       </div>

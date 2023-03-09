@@ -29,6 +29,7 @@ $--card-size-mobile: 140px;
 
 .logo_navbar{
     width: 100px; 
+    margin-top: 20px;
 }
 .navbar_left ul,
 .navbar_right ul {
@@ -87,6 +88,7 @@ $--card-size-mobile: 140px;
 @media (max-width: 640px) {
     .navbar_menu {
         display: block;
+        margin-top: 20px;
     }
     .navbar_left ul {
         display: none;

@@ -25,9 +25,9 @@ $--card-size-mobile: 140px;
 .my_orders_container {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  width: 300px;
+  width: 500px;
   position: relative;
-  top: 100px;
+  // top: 100px;
 }
 .my_orders_content {
   display: flex;
@@ -42,11 +42,7 @@ $--card-size-mobile: 140px;
   border-radius: 8px;
      
 }
-.orders img{
-  transform: rotate(270deg);
-  width: 12px; 
-  height: 7px;
-}
+
 .orders p:nth-child(1) {
   display: flex;
   flex-direction: column;

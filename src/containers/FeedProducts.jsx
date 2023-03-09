@@ -8,7 +8,7 @@ const API = 'https://api.escuelajs.co/api/v1/products';
 
 const FeedProdutcs =  () => {
 const  products  =  useGetProducts(API);   
-// console.log(products, 'mmm')
+console.log(products, 'mmm')
     return(
        <>
         <section className={styles['main_container']}>
@@ -25,8 +25,7 @@ const  products  =  useGetProducts(API);
                product.images[0] !== 'adsct.gif' &&
                product.images[0] !== 'orders.png' &&
                product.images[0] !== 'logo-nestjs.pxm' &&
-               product.images[0] !== 'test.png' &&
-               !product.images[0].includes('https://cdn1.coppel.com/images/catalog/pm/')
+               product.images[0] !== 'test.png' 
              ) {
 
                return <ProductItem  product={product} key={product.id} />

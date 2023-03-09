@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import AppContext from "@context/AppContext";
 import ArrowIcon from '@assets/Icons/flechita.png';
 import ShoppingCartItem from "@components/ShoppingCartItem";
@@ -41,7 +42,7 @@ const sumTotal = () => {
               </p>
               <p>${sumTotal()}</p>
             </div>
-            <button className={styles['checkout_button']}>Checkout</button>
+            <Link href="/checkout" className={styles['checkout_button']}>Checkout</Link>
           </div>
         </aside>
       </>

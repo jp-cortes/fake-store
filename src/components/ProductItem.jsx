@@ -9,13 +9,18 @@ const ProductItem = ({ product }) => {
 const { addToCart } = useContext(AppContext);
 
 //function for the shopping Cart
+const handleDetails = (product) => {
+console.log(product)
+}
 const handleClick = (item) => {
     addToCart(item);
 }
 
     return(
         <div className={styles['product_card']}>
-        <Image src={product.images[0]} alt={product.title} width="240" height="240"/>
+        <Image 
+        onClick={handleDetails}
+        src={product.images[0]} alt={product.title} width="240" height="240"/>
         <div className={styles['product_info']}>
             <div>
                 <p>${product.price}</p>

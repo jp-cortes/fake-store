@@ -1,60 +1,61 @@
 import React from "react";
-import '@styles/MenuMobile.module.scss';
+import Link from "next/link";
+import styles from '@styles/MenuMobile.module.scss';
 
 const MenuMobile =  () => {
     return (
       <>
-        <main className="mobile_menu">
+        <aside className={styles['mobile_menu']}>
           <section>
             <ul>
               <li>
-                <a href="/">CATEGORIES</a>
+                <Link href="/">CATEGORIES</Link>
               </li>
               <li>
-                <a href="/">All</a>
+                <Link href="/">All</Link>
               </li>
               <li>
-                <a href="/">Clothes</a>
+                <Link href="/">Clothes</Link>
               </li>
               <li>
-                <a href="/">Electronics</a>
+                <Link href="/">Electronics</Link>
               </li>
               <li>
-                <a href="/">Furniture</a>
+                <Link href="/">Furniture</Link>
               </li>
               <li>
-                <a href="/">Toys</a>
+                <Link href="/">Toys</Link>
               </li>
               <li>
-                <a href="/">Others</a>
+                <Link href="/">Others</Link>
               </li>
             </ul>
 
             <ul>
               <li>
-                <a href="/">My orders</a>
+                <Link href="/checkout">My orders</Link>
               </li>
 
               <li>
-                <a href="/">My account</a>
+                <Link href="/edit-account">My account</Link>
               </li>
             </ul>
 
-            <ul className="bottom-menu">
+            <ul className={styles['bottom_menu']}>
               <li>
-                <a href="/" className="email_mobile_menu">
+                <Link href="/edit-account" className={styles['email_mobile_menu']}>
                   fatalfury@gmail.com
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a href="/" className="sign_out">
+                <Link href="/" className={styles['sign_out']}>
                   Sign out
-                </a>
+                </Link>
               </li>
             </ul>
           </section>
-        </main>
+        </aside>
       </>
     );
 }

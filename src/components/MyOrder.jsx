@@ -1,125 +1,35 @@
 import React from "react";
-import '@styles/MyOrder.module.scss';
+import Image from "next/image";
+import styles from '@styles/MyOrder.module.scss';
 
-const MyOrder = () => {
+const MyOrder = (props) => {
+  const  { product, indexValue } = props;
     return (
       <>
-        <main>
-          <section className="my_order">
-            <div className="my_order_container">
-              <h1 className="my_order_title">My order</h1>
+        <>
+          <section className={styles['my_order']}>
+            <div className={styles['my_order_container']}>
 
-              <div className="my_order_content">
-                <div className="order">
-                  <p>
-                    <span>03.25.22</span>
-                    <span>6 articles</span>
-                  </p>
-                  <p>$560.00</p>
-                </div>
+              <div className={styles['my_order_content']}>
 
-                <div className="shopping_cart">
+                <div className={styles['shopping_cart']}>
                   <figure>
-                    <img
-                      src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                      alt="bike"
+                    <Image
+                      src={product.images[0]}
+                      alt={product.title}
+                      width="70" 
+                      height="70"
                     />
                   </figure>
-                  <p>Bike</p>
-                  <p>$90</p>
+                  <p>{product.title}</p>
+                  <p>${product.price}</p>
                 </div>
 
-                <div className="shopping_cart">
-                  <figure>
-                    <img
-                      src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                      alt="bike"
-                    />
-                  </figure>
-                  <p>Bike</p>
-                  <p>$90</p>
-                </div>
-
-                <div className="shopping_cart">
-                  <figure>
-                    <img
-                      src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                      alt="bike"
-                    />
-                  </figure>
-                  <p>Bike</p>
-                  <p>$90</p>
-                </div>
-
-                <div className="shopping_cart">
-                  <figure>
-                    <img
-                      src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                      alt="bike"
-                    />
-                  </figure>
-                  <p>Bike</p>
-                  <p>$90</p>
-                </div>
-
-                <div className="shopping_cart">
-                  <figure>
-                    <img
-                      src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                      alt="bike"
-                    />
-                  </figure>
-                  <p>Bike</p>
-                  <p>$90</p>
-                </div>
-
-                <div className="shopping_cart">
-                  <figure>
-                    <img
-                      src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                      alt="bike"
-                    />
-                  </figure>
-                  <p>Bike</p>
-                  <p>$90</p>
-                </div>
-
-                <div className="shopping_cart">
-                  <figure>
-                    <img
-                      src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                      alt="bike"
-                    />
-                  </figure>
-                  <p>Bike</p>
-                  <p>$90</p>
-                </div>
-
-                <div className="shopping_cart">
-                  <figure>
-                    <img
-                      src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                      alt="bike"
-                    />
-                  </figure>
-                  <p>Bike</p>
-                  <p>$90</p>
-                </div>
-
-                <div className="shopping_cart">
-                  <figure>
-                    <img
-                      src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                      alt="bike"
-                    />
-                  </figure>
-                  <p>Bike</p>
-                  <p>$90</p>
-                </div>
+               
               </div>
             </div>
           </section>
-        </main>
+        </>
       </>
     );
 }

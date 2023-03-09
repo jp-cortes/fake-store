@@ -48,6 +48,22 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'scontent.fxry1-2.fna.fbcdn.net',
       },
+      {
+        protocol: 'https',
+        hostname: 'i.imgur.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'api.escuelajs.co',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.google.com',
+      },
+      {
+        protocol: 'http',
+        hostname: 'uzsmart.ru',
+      },
     ],
   },
 }

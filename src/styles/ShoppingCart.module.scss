@@ -25,6 +25,7 @@ $--card-size-mobile: 140px;
   border-radius: 6px;
   border: solid 1px $--very-light-pink;
   bottom: auto;
+  z-index: 10;
   // height: auto;
   // max-height: auto;
 }
@@ -109,6 +110,9 @@ $--card-size-mobile: 140px;
   font-size: $--md;
   font-weight: bold;
   height: 50px;
+  text-decoration: none;
+  padding: 16px;
+  margin: 16px auto;
 }
 .close_icon{
   width: 12px;

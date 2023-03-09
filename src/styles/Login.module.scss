@@ -76,10 +76,12 @@ $--card-size-mobile: 140px;
   border: 1px solid $--hospital-green;
   color: $--hospital-green;
   width: 100%;
-  cursor: pointer;
+  padding:  16px 0;
+  // cursor: pointer;
   font-size: $--md;
   font-weight: bold;
-  height: 50px;
+  text-align: center;
+  text-decoration: none;
 }
 .secondary_button{
   margin-top: 90px;
