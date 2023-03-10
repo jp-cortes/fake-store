@@ -13,10 +13,15 @@ $--card-size-mobile: 140px;
 
 /*product_details*/
 .product_detail {
+  background: $--primary-color;
   width: 360px;
+  height: auto;
   padding-bottom: 24px;
-  position: absolute;
+  position: fixed;
   right: 0;
+  border: solid 1px $--hospital-green;
+  border-bottom-left-radius: 16px ;
+  border-bottom-right-radius: 16px ;
 }
 .product_detail_close {
   background: $--primary-color;

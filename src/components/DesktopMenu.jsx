@@ -2,22 +2,28 @@ import React from "react";
 import Link from "next/link";
 import styles from '@styles/DesktopMenu.module.scss';
 
-const DesktopMenu =  () => {
+const DesktopMenu =  ({ toggle, setToggle }) => {
     return (
       <div className={styles['desktop_menu']}>
         <ul>
           <li>
-            <a href="/*" className={styles['title_menu_desktop']}>
+            <Link
+            onClick={() => setToggle(!toggle)} 
+            href="#" className={styles['title_menu_desktop']}>
               My orders
-            </a>
+            </Link>
           </li>
 
           <li>
-            <Link href="/login">My account</Link>
+            <Link 
+            onClick={() => setToggle(!toggle)}
+            href="/login">My account</Link>
           </li>
 
           <li>
-            <Link href="/">Sign out</Link>
+            <Link 
+            onClick={() => setToggle(!toggle)}
+            href="/">Sign out</Link>
           </li>
         </ul>
       </div>

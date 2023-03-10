@@ -29,7 +29,7 @@ const Checkout = () => {
                
                   <p>Today: <b>{currentDate()}</b></p>
                   <p><b>{state.cart.length}</b> articles</p>
-                  <div>
+                  <div className={styles.orders}>
                   {state.cart.map( (product, index) => (
                       <MyOrder product={product} key={`orderItem-${index}`}/>
                   ))
@@ -38,10 +38,10 @@ const Checkout = () => {
                   </div>
              
               </div>
+                  <p className={styles.total}>Total: <b>$ {sumTotal()}</b></p>
 
             </div>
                   
-                  <p>Total: <b>$ {sumTotal()}</b></p>
           </section>
         </main>
       </>

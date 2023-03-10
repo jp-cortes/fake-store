@@ -1,24 +1,27 @@
 //bring  de tails from product details
 import React from 'react';
-import '@styles/ProductDetails.module.scss';
-import AddToCart from '@/icons/bt_add_to_cart.svg';
+import Image from 'next/image';
+import styles from'@styles/ProductDetails.module.scss';
+import AddToCart from '@assets/Icons/bt_add_to_cart.svg';
 
-const ProductInfo = () => {
+const ProductInfo = ({ product, handleClick}) => {
     return(
         <>
-        <img
-          src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-          alt="bike"
+        <Image
+        src={product.images[0]} alt={product.title}
+        width='500'
+        height='360'
         />
-        <div className="info_product">
-          <p>$35,00</p>
-          <p>Bike</p>
+        <div className={styles['info_product']}>
+          <p>${product.price}</p>
+          <p>{product.name}</p>
           <p>
-            With its practical position, this bike also fulfills a decorative
-            function, add your hall or workspace.
+           {product.description}
           </p>
-          <button className="primary_add_to_cart_button add_to_cart_button">
-            <img src={AddToCart} alt="add to cart" />
+          <button className={`${styles['primary_add_to_cart_button']} ${styles['add_to_cart_button']}`}>
+            <Image
+            onClick={handleClick}
+            src={AddToCart} alt="add to cart" />
             Add to cart
           </button>
         </div>

@@ -64,6 +64,10 @@ const nextConfig = {
         protocol: 'http',
         hostname: 'uzsmart.ru',
       },
+      {
+        protocol: 'https',
+        hostname: 'turbomag.com.ua',
+      },
     ],
   },
 }

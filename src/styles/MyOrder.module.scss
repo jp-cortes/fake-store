@@ -13,10 +13,13 @@ $--card-size-mobile: 140px;
 
 /*my_order*/
 .my_order {
+  background-color: $--text-input-field;
   width: 100%;
-  height: auto;
   display: grid;
   place-items: center;
+  border: solid 1px $--hospital-green;
+  border-radius: 16px;
+  margin-bottom: 12px;
 }
 .my_order_title {
   font-size: $--lg;
@@ -27,7 +30,7 @@ $--card-size-mobile: 140px;
   grid-template-rows: auto 1fr auto;
   width: 400px;
   position: relative;
-  top: 50px;
+  top: 16px;
 }
 .my_order_content {
   display: flex;

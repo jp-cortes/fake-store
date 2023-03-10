@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import AppContext from "@context/AppContext";
@@ -42,7 +42,9 @@ const sumTotal = () => {
               </p>
               <p>${sumTotal()}</p>
             </div>
-            <Link href="/checkout" className={styles['checkout_button']}>Checkout</Link>
+            <Link 
+            onClick={() => setToggleOrders(!toggleOrders)}
+            href="/checkout" className={styles['checkout_button']}>Checkout</Link>
           </div>
         </aside>
       </>

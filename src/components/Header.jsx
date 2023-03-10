@@ -37,7 +37,7 @@ const Header = () => {
       setToggle(false);//toggle for desktop menu
     } else {
       setToggleMenuMobile(false);//toggle for mobile menu
-      setToggle(true);//toggle for desktop menu
+      ;//toggle for desktop menu
     }
   }, [screenSize]);
     
@@ -106,7 +106,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          {toggle && <DesktopMenu />}
+          {toggle && <DesktopMenu toggle={toggle} setToggle={setToggle} />}
           {toggleOrders && <ShoppingCart toggleOrders={toggleOrders} setToggleOrders={setToggleOrders} />}
         </nav>
       </>
