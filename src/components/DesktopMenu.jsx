@@ -9,7 +9,7 @@ const DesktopMenu =  ({ toggle, setToggle }) => {
           <li>
             <Link
             onClick={() => setToggle(!toggle)} 
-            href="#" className={styles['title_menu_desktop']}>
+            href="/checkout" className={styles['title_menu_desktop']}>
               My orders
             </Link>
           </li>

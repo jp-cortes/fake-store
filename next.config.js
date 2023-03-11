@@ -68,6 +68,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'turbomag.com.ua',
       },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
     ],
   },
 }

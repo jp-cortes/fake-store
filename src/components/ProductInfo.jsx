@@ -5,22 +5,25 @@ import styles from'@styles/ProductDetails.module.scss';
 import AddToCart from '@assets/Icons/bt_add_to_cart.svg';
 
 const ProductInfo = ({ product, handleClick}) => {
+
+  
     return(
         <>
         <Image
-        src={product.images[0]} alt={product.title}
+        src={product?.images[0]} alt={product?.title}
         width='500'
         height='360'
         />
         <div className={styles['info_product']}>
-          <p>${product.price}</p>
-          <p>{product.name}</p>
+          <p>${product?.price}</p>
+          <p>{product?.name}</p>
           <p>
-           {product.description}
+           {product?.description}
           </p>
-          <button className={`${styles['primary_add_to_cart_button']} ${styles['add_to_cart_button']}`}>
+          <button 
+          onClick={handleClick}
+          className={`${styles['primary_add_to_cart_button']} ${styles['add_to_cart_button']}`}>
             <Image
-            onClick={handleClick}
             src={AddToCart} alt="add to cart" />
             Add to cart
           </button>

@@ -14,4 +14,19 @@ const useGetProducts = (API) => {
 
     return products;
 }
-export default useGetProducts;
+const useGetProductById  = (API, id) => {
+    const [productById, setProductById] = useState();
+
+    useEffect(() => {
+        async function getProduct () {
+            const response = await axios(`${API}/${id}`);
+            // console.log(response, 'product by id')
+            setProductById(response.data);
+        }
+        getProduct();
+    }, [id]);
+    return productById
+}
+
+
+export { useGetProducts, useGetProductById };

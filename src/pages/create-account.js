@@ -7,7 +7,7 @@ const CreateAccount = () => {
       <>
         <main className={styles.create_account}>
           <section className={styles.form_account}>
-            <h1 className={styles.title_account}>My account</h1>
+            <h1 className={styles.title_account}>New account</h1>
             <div className={styles.responsive_page}>
               <form action="/" className={styles.form_name}>
                 <label for="name" className={styles.label_name}>
