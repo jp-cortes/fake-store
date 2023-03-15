@@ -16,7 +16,7 @@ $--card-size-mobile: 140px;
 /*shopping_cart*/
 .product_detail_shopping_cart{
   width: 360px;
-  padding: 24px;
+  padding: 24px 24px 40px 24px;
   box-sizing: border-box;
   position: absolute;
   right: 0;
@@ -85,7 +85,7 @@ $--card-size-mobile: 140px;
   gap: 16px;
   align-items: center;
   background-color: $--text-input-field;
-  margin-bottom: 24px;
+  margin-bottom: 34px;
   border-radius: 8px;
   padding: 0 24px;
 }

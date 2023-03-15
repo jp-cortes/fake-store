@@ -13,7 +13,7 @@ const  products  =  useGetProducts(API);
        <>
         <section className={styles['main_container']}>
         <div className={styles['cards_container']}>
-           {products?.map(product => {
+           {products?.slice(0, 100).map(product => {
             if (
                product.images.length > 0 &&
                product.images[0] !== '' &&

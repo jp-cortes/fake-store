@@ -22,7 +22,7 @@ const MyOrder = (props) => {
                     />
                   </figure>
                   <p>{product.title}</p>
-                  <p>${product.price}</p>
+                  <p>$ {product.price}</p>
                 </div>
 
                
