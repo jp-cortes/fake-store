@@ -3,7 +3,7 @@
 # Getting Started
 To get started with the project, follow these steps:
 
-# Clone the repository: git clone https://github.com/jp-cortes/ecommerce-store.git
+* Clone the repository: ```git clone https://github.com/jp-cortes/ecommerce-store.git```
 * Install the dependencies: npm install
 * Start the development server: npm run dev
 * Open your web browser and go to http://localhost:3000
