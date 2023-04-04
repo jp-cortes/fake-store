@@ -16,8 +16,8 @@ The fake e-commerce site includes the following features:
 * Shopping cart functionality with the ability to add, remove, and update items
 * User profile pages with order history and account details
 * Progressive Web App (PWA) with offline functionality and the ability to add to the home screen on mobile devices
-* Technologies Used
-# The fake e-commerce site has been built using the following technologies:
+# Technologies Used
+ The fake e-commerce site has been built using the following technologies:
 
 * Next.js
 * React
