@@ -14,8 +14,6 @@ The fake e-commerce site includes the following features:
 * Home page with featured products and categories
 * Product pages with product details, images, and reviews
 * Shopping cart functionality with the ability to add, remove, and update items
-* Checkout process with payment integration using Stripe
-* User account creation and login functionality
 * User profile pages with order history and account details
 * Progressive Web App (PWA) with offline functionality and the ability to add to the home screen on mobile devices
 * Technologies Used
